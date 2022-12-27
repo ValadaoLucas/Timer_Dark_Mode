@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --font-color: hsla(240, 6%, 21%, 1);
+
+  --bt-bg: hsla(240, 9%, 89%, 1);
+  --bt-bg-2: hsla(194, 97%, 31%, 1);
+  --bt-bg-hover: hsla(194, 97%, 31%, 1);
+  --bt-bg3: white;
+  font-size: 62.5%;
+
+
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+
+
+main {
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
+
+  line-height: 14.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#mode {
+  position: absolute;
+  display: flex;
+  align-self: baseline;
+  right: 6.4rem;
+  
+  margin-top: 5rem;
+  margin-right: 5rem;
+  }
+
+ .hide {
+    display: none;
+  }
+
+
+.backgroundDark {
+  background-color: black;
+}
+
+
+button {
+  border: none;
+  background: none;
+  
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#mood button {
+  padding: 4.8rem;
+  border-radius: 2.4rem;
+
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+.forest,
+.rain,
+.cafeteria,
+.fireplace {
+  background: var(--bt-bg);
+}
+
+.chosenSound svg path {
+  fill: #FFFFFF;
+}
+
+.chosenSound {
+  background: var(--bt-bg-2);
+}
+
+.chosenControls svg path {
+  fill: #FFFFFF;
+}
+  
+#timer {
+  margin-right: 19.2rem;
+  margin-bottom: 4.8rem;
+
+  align-self: center;
+  
+}
+
+#timer .time {
+  display: flex;
+  font-size: 12rem;
+  
+
+}
+
+#controls {
+  display: flex;
+  gap: 4rem;
+
+}
+
+#controls button svg {
+  width: 4.8rem;
+  height: 4.8rem;;
+}
+
+#mood {
+  display: grid;
+  grid-template-areas: "A B" "C D";
+  gap: 3.2rem;
+
+}
+
+#mood button {
+  padding: 0;
+}
+
+#mood button svg {
+  width: 4rem;
+  height: 5rem;
+    
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  margin-top: 3.2rem;
+  display: grid;
+  width: 9rem;
+  height: 0.4rem;
+  margin-left: 2.4rem;
+  background: #323238;
+  cursor: pointer;
+  
+
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #323238;
+  border-radius: 10rem;
+}
+
+.chosenSound input[type='range'] {
+  background: var(--bt-bg3);
+}
+
+.chosenSound input[type='range']::-webkit-slider-thumb {
+  background: var(--bt-bg3);
+}
